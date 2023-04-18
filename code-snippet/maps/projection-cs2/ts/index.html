@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EJ2 Maps</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script src="projection-data.js"></script>
+    <script src="world-map.js"></script>
+</head>
+
+<body>
+    <div id='loader'>Loading....</div>
+    <div class="col-lg-9 control-section">
+        <div id="container" align="center"></div>
+    </div>
+    <div class="col-lg-3 property-section">
+        <table id="property" title="Properties" style="width: 100%">
+            <tbody><tr style="height: 50px">
+                <td style="width: 60%">
+                    <div>Projection Type</div>
+                </td>
+                <td style="width: 40%;">
+                    <select name="projectionType" id="projectiontype" style="margin-left: -25px">
+                        <option value="Mercator">Mercator</option>
+                        <option value="Equirectangular">Equirectangular</option>                    
+                        <option value="Miller">Miller</option>
+                        <option value="Eckert3">Eckert3</option>
+                        <option value="Eckert5">Eckert5</option>
+                        <option value="Eckert6">Eckert6</option>
+                        <option value="Winkel3">Winkel3</option>                    
+                        <option value="AitOff">AitOff</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+    
+</body>
+
+</html>

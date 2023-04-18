@@ -1,0 +1,31 @@
+
+
+import { world_map } from './world-map.ts';
+import { Maps, Zoom } from '@syncfusion/ej2-maps';
+Maps.Inject(Zoom);
+let map: Maps = new Maps({
+    zoomSettings: {
+        enable: true,
+        toolbarSettings:{
+            orientation:'Vertical',
+            backgroundColor:'pink',
+            borderWidth:3,
+            borderColor:'green',
+            verticalAlignment:'Near',
+            buttonSettings: {
+               toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
+            }
+        }
+    },
+    layers: [
+        {
+            shapeData: world_map,
+            shapeSettings: {
+                fill: '#C1DFF5'
+            }
+        }
+    ]
+});
+map.appendTo('#element');
+
+
