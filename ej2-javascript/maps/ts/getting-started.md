@@ -70,7 +70,7 @@ The Essential JS2 Maps control can be added to the application. To get started, 
 
 Add an HTML div element to act as the Maps element in the **index.html** file using the following code.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
