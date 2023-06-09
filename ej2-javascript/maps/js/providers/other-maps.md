@@ -34,7 +34,7 @@ var map = new ej.maps.Maps({
 map.appendTo('container');
 ```
 
-![TomTom Maps](../../../maps/images/MapProviders/tomtom-maps.PNG)
+![TomTom Maps](../../maps/images/MapProviders/tomtom-maps.PNG)
 
 ## Enabling zooming and panning
 
@@ -55,7 +55,7 @@ var maps = new ej.maps.Maps({
 maps.appendTo('#element');
 ```
 
-![TomTom Maps with Zooming and Panning](../../../maps/images/MapProviders/tomtom-maps-zooming.PNG)
+![TomTom Maps with Zooming and Panning](../../maps/images/MapProviders/tomtom-maps-zooming.PNG)
 
 ## Adding markers and navigation line
 
@@ -102,7 +102,7 @@ var maps = new ej.maps.Maps({
 maps.appendTo('#element');
 ```
 
-![TomTom Maps with Markers and Navigation Line](../../../maps/images/MapProviders/tomtom-maps-marker-and-line.PNG)
+![TomTom Maps with Markers and Navigation Line](../../maps/images/MapProviders/tomtom-maps-marker-and-line.PNG)
 
 ## Adding sublayer
 
@@ -126,7 +126,7 @@ var maps = new ej.maps.Maps({
 maps.appendTo('#element');
 ```
 
-![TomTom Maps with Sublayer](../../../maps/images/MapProviders/tomtom-map-sublayer.PNG)
+![TomTom Maps with Sublayer](../../maps/images/MapProviders/tomtom-map-sublayer.PNG)
 
 ## Enabling legend
 
@@ -172,4 +172,4 @@ map.appendTo('#element');
 
 ```
 
-![TomTom Maps with Legend](../../../maps/images/MapProviders/tomtom-map-legend.PNG)
+![TomTom Maps with Legend](../../maps/images/MapProviders/tomtom-map-legend.PNG)
