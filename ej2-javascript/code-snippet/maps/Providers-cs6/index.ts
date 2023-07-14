@@ -1,7 +1,7 @@
 
 
 
-import { Maps, NavigationLine, Marker } from '@syncfusion/ej2-maps';
+import { Maps, NavigationLine, Marker, Zoom } from '@syncfusion/ej2-maps';
 Maps.Inject(NavigationLine, Marker, Zoom);
 let map: Maps = new Maps({
     zoomSettings: {
