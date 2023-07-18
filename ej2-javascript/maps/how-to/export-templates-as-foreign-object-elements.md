@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## How to export the Maps with Marker template using ForeignObject
 
-The Maps component do not support exporting with marker template. This is because the marker template are intended to render any elements in the Maps component such as text, images, or custom elements. Since Maps is a SVG based control, the marker templates can be rendered as **foreignObject** element. However, some web browsers do not support it.  As a workaround, we can achieve the same in the sample level.
+The Maps do not support exporting with marker template. This is because the marker template are intended to render any elements in the Maps such as text, images, or custom elements. Since Maps is a SVG based control, the marker templates can be rendered as **foreignObject** element. However, some web browsers do not support it.  As a workaround, we can achieve the same in the sample level.
 
 The Maps with marker template can be exported in **PNG**, **JPEG**, and **PDF** formats. Similarly, the annotations and tooltip template can be exported as **foreignObject** elements. The example below demonstrates to export the Maps with marker template.
 
@@ -219,7 +219,7 @@ document.getElementById('export').onclick = () => {
 
 ## How to export the OSM Maps with Marker template using ForeignObject
 
-The Maps component do not support exporting with marker template. This is because the marker template are intended to render any elements in the Maps component such as text, images, or custom elements. Since Maps is a SVG based control, the marker templates can be rendered as **foreignObject** element. However, some web browsers do not support it.  As a workaround, we can achieve the same in the sample level.
+The Maps do not support exporting with marker template. This is because the marker template are intended to render any elements in the Maps such as text, images, or custom elements. Since Maps is a SVG based control, the marker templates can be rendered as **foreignObject** element. However, some web browsers do not support it.  As a workaround, we can achieve the same in the sample level.
 
 The OSM Maps with marker template can be exported in **PNG**, **JPEG**, and **PDF** formats. Similarly, the annotations and tooltip template can be exported as **foreignObject** elements. The example below demonstrates to export the OSM Maps with marker template.
 
@@ -400,8 +400,6 @@ function mapsExport(formatValue, fileName) {
   }
 }
 
-// code for property panel
-
 document.getElementById('export').onclick = () => {
   let formatValue: any = document.getElementById('format').value;
   let fileName: string = 'MapsOSM';
@@ -575,8 +573,6 @@ function mapsExport(formatValue, fileName) {
     _loop_1(i);
   }
 }
-
-// code for property panel
 
 document.getElementById('export').onclick = () => {
   var formatValue = document.getElementById('format').value;
