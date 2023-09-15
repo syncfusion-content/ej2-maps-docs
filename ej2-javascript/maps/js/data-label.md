@@ -63,6 +63,21 @@ The following properties are available in the `dataLabelSettings` to customize t
         
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs50" %}
 
+## Label Animation
+
+The Data Label is animated on loading the Map. This can be handled using the [animationDuration](../api/maps/dataLabelSettingsModel/#animationduration) property in the `dataLabelSettings` of the Maps. The duration of the animation can be specified in milliseconds.
+
+{% tabs %}
+{% highlight ts tabtitle="index.js" %}
+{% include code-snippet/maps/label-animation-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/maps/label-animation-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/maps/label-animation-cs1" %}
+
 ## Smart labels
 
 The Maps control provides an option to handle the labels when they intersect with the corresponding shape borders using the [smartLabelMode](../api/maps/dataLabelSettingsModel/#smartlabelmode) property. The following options are available in the `smartLabelMode` property.
