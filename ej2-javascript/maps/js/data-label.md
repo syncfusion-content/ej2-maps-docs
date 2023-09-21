@@ -65,7 +65,7 @@ The following properties are available in the `dataLabelSettings` to customize t
 
 ## Label animation
 
-The data labels can be animated during the initial rendering of the Maps. This can be enabled by setting the [animationDuration](../api/maps/dataLabelSettingsModel/#animationduration) property in the dataLabelSettings of the Maps. The duration of the animation is specified in milliseconds.
+The data labels can be animated during the initial rendering of the Maps. This can be enabled by setting the [animationDuration](../api/maps/dataLabelSettingsModel/#animationduration) property in the `dataLabelSettings` of the Maps. The duration of the animation is specified in milliseconds.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
