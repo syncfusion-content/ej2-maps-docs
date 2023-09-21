@@ -71,7 +71,7 @@ The following properties are available in the `dataLabelSettings` to customize t
 
 ## Label Animation
 
-The Data Label is animated on loading the Map. This can be handled using the [animationDuration](../api/maps/dataLabelSettingsModel/#animationduration) property in the `dataLabelSettings` of the Maps. The duration of the animation can be specified in milliseconds.
+The data labels can be animated during the initial rendering of the Maps. This can be enabled by setting the [animationDuration](../api/maps/dataLabelSettingsModel/#animationduration) property in the dataLabelSettings of the Maps. The duration of the animation is specified in milliseconds.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -126,7 +126,7 @@ The Maps component provides an option to handle the labels when a label intersec
 
 Any HTML elements can be added as a template in the data labels by using the [template](../api/maps/dataLabelSettingsModel/#template) property of `dataLabelSettings` in the Maps control.
 
->The properties of data label such as, `smartLabelMode` , `intersectionAction`, `border`, `fill`, `opacity` and `textStyle` properties are not applicable to `template` property. The styles can be applied to the label template using the CSS styles of the HTML element.
+>The properties of data label such as, `smartLabelMode` , `intersectionAction`, `animationDuration`, `border`, `fill`, `opacity` and `textStyle` properties are not applicable to `template` property. The styles can be applied to the label template using the CSS styles of the HTML element.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
