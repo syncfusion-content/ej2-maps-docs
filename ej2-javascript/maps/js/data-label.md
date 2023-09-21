@@ -63,7 +63,7 @@ The following properties are available in the `dataLabelSettings` to customize t
         
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs50" %}
 
-## Label Animation
+## Label animation
 
 The data labels can be animated during the initial rendering of the Maps. This can be enabled by setting the [animationDuration](../api/maps/dataLabelSettingsModel/#animationduration) property in the dataLabelSettings of the Maps. The duration of the animation is specified in milliseconds.
 
