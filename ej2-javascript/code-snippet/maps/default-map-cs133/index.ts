@@ -2,7 +2,7 @@
 
 import { world_map } from './world-map.ts';
 import { cluster } from './cluster.ts'
-import { Maps , Marker,MapsTooltip, MarkerSettings } from '@syncfusion/ej2-maps';
+import { Maps , Marker,MapsTooltip, Point } from '@syncfusion/ej2-maps';
 Maps.Inject(Marker,MapsTooltip);
 // initialize Maps component
 let map: Maps = new Maps({
