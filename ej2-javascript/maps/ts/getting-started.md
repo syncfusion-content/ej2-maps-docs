@@ -35,15 +35,23 @@ Below is the list of minimum dependencies required to use the Maps.
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-    git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
 
-```
-    cd ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Syncfusion JavaScript packages
 
@@ -51,9 +59,13 @@ Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com]
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
-```
-    npm install
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm install
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Import the Syncfusion CSS styles
 
@@ -61,9 +73,13 @@ Syncfusion JavaScript controls come with [built-in themes](https://ej2.syncfusio
 
 The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
 
-```
-  @import "../../node_modules/@syncfusion/ej2/material.css";
-```
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+
+@import "../../node_modules/@syncfusion/ej2/material.css";
+
+{% endhighlight %}
+{% endtabs %}
 
 > You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and CSS reference for individual controls.
 
@@ -73,7 +89,9 @@ The Essential JS2 Maps control can be added to the application. To get started, 
 
 Add an HTML div element to act as the Maps element in the **index.html** file using the following code.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,11 +110,15 @@ Add an HTML div element to act as the Maps element in the **index.html** file us
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Import the Maps control in the `app.ts` to initialize a Maps and append the Maps instance to the `#container`.
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Maps } from '@syncfusion/ej2-maps';
 
 // initialize Maps component
@@ -104,23 +126,33 @@ let map: Maps = new Maps();
 
 // render initialized Map
 map.appendTo('#container');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The below example shows a basic Maps control.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Maps } from '@syncfusion/ej2-maps';
 
 let map: Maps = new Maps();
 
 map.appendTo('#element');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 As we didn't specify shapeData to the maps, no shape will be rendered and only an empty SVG element is appended to the maps container.
 
@@ -146,12 +178,14 @@ For this application we are going to use tooltip, data label and legend features
 
 Now import the MapsTooltip, DataLabel and Legend modules from maps package and inject it into the Maps component using `Maps.Inject` method.
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { Maps, Legend, DataLabel, MapsTooltip } from '@syncfusion/ej2-maps';
 Maps.Inject(Legend, DataLabel, MapsTooltip);
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Render shapes from GeoJSON data
 
