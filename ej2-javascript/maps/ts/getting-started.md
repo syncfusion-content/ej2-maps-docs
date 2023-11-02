@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Maps control
 
-This section explains you the steps required to create a map and demonstrate the basic usage of the maps control.
+This section briefly explains how to create **Maps** component and configure its available functionalities in TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository.
+
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 You can explore some useful features in the Maps control using the following video.
 
@@ -29,40 +31,41 @@ Below is the list of minimum dependencies required to use the Maps.
     |-- @syncfusion/ej2-svg-base
 ```
 
-## Installation and Configuration
+## Set up development environment
 
-* To get started with Maps control, clone the Essential JS 2 quickstart project from [`GitHub`](https://github.com/syncfusion/ej2-quickstart.git) and install necessary packages by using the following commands.
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add Syncfusion JavaScript packages
+
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm install
-```
 
-* Syncfusion Maps packages can be mapped in **system.config.js** configuration file.
-
-```javascript
-System.config({
-    paths: {
-        'syncfusion:': './node_modules/@syncfusion/',
-    },
-    map: {
-        app: 'app',
-
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-data": "syncfusion:ej2-data/dist/ej2-data.umd.min.js",
-        "@syncfusion/ej2-svg-base": "syncfusion:ej2-svg-base/dist/ej2-svg-base.umd.min.js",
-        "@syncfusion/ej2-pdf-export": "syncfusion:ej2-pdf-export/dist/ej2-pdf-export.umd.min.js",
-        "@syncfusion/ej2-maps": "syncfusion:ej2-maps/dist/ej2-maps.umd.min.js"
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
-```
-
->The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`system.config.js` ) to start with all Essential JS 2 components.
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Map control to the Project
 
@@ -70,7 +73,9 @@ The Essential JS2 Maps control can be added to the application. To get started, 
 
 Add an HTML div element to act as the Maps element in the **index.html** file using the following code.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -80,23 +85,24 @@ Add an HTML div element to act as the Maps element in the **index.html** file us
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript UI Controls" />
     <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
 </head>
 
 <body>
-     <!--container which is going to render the Map-->
-     <div id='container'>
-     </div>
+    <!--container which is going to render the Map-->
+    <div id='container'>
+    </div>
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Import the Maps control in the `app.ts` to initialize a Maps and append the Maps instance to the `#container`.
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Maps } from '@syncfusion/ej2-maps';
 
 // initialize Maps component
@@ -104,23 +110,33 @@ let map: Maps = new Maps();
 
 // render initialized Map
 map.appendTo('#container');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The below example shows a basic Maps control.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Maps } from '@syncfusion/ej2-maps';
 
 let map: Maps = new Maps();
 
 map.appendTo('#element');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 As we didn't specify shapeData to the maps, no shape will be rendered and only an empty SVG element is appended to the maps container.
 
@@ -146,12 +162,14 @@ For this application we are going to use tooltip, data label and legend features
 
 Now import the MapsTooltip, DataLabel and Legend modules from maps package and inject it into the Maps component using `Maps.Inject` method.
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { Maps, Legend, DataLabel, MapsTooltip } from '@syncfusion/ej2-maps';
 Maps.Inject(Legend, DataLabel, MapsTooltip);
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Render shapes from GeoJSON data
 
