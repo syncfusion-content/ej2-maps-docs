@@ -88,9 +88,9 @@ Add an HTML div element to act as the Maps element in the **index.html** file us
 </head>
 
 <body>
-     <!--container which is going to render the Map-->
-     <div id='container'>
-     </div>
+    <!--container which is going to render the Map-->
+    <div id='container'>
+    </div>
 </body>
 
 </html>
