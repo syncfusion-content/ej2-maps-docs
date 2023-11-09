@@ -33,7 +33,7 @@ Below is the list of minimum dependencies required to use the Maps.
 
 ## Set up development environment
 
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion TypeScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -53,9 +53,9 @@ cd ej2-quickstart
 {% endhighlight %}
 {% endtabs %}
 
-## Add Syncfusion TypeScript packages
+## Add Syncfusion JavaScript packages
 
-Syncfusion TypeScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion TypeScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
