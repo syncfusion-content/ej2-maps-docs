@@ -114,6 +114,35 @@ map.appendTo('#container');
 {% endhighlight %}
 {% endtabs %}
 
+Add the **world-map** data in the **app.ts** file.
+
+>Note: Refer the data for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map-710289613) here.
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
+import { world_map } from './world-map';
+
+{% endhighlight %}
+{% endtabs %}
+
+Bind the **world-map** data to the `shapeData` property of the layers in the Maps control.
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
+let map: Maps = new Maps({
+    layers: 
+    [{
+        shapeData: world_map
+    }]
+});
+
+map.appendTo('#container');
+
+{% endhighlight %}
+{% endtabs %}
+
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
 {% tabs %}
@@ -130,48 +159,21 @@ The below example shows a basic Maps control.
 {% highlight ts tabtitle="app.ts" %}
 
 import { Maps } from '@syncfusion/ej2-maps';
+import { world_map } from './world_map';
 
-let map: Maps = new Maps();
+let map: Maps = new Maps({
+    layers: 
+    [{
+        shapeData: world_map
+    }]
+});
 
-map.appendTo('#element');
-
-{% endhighlight %}
-{% endtabs %}
-
-As we didn't specify shapeData to the maps, no shape will be rendered and only an empty SVG element is appended to the maps container.
-
-## Module Injection
-
-Maps component are segregated into individual feature-wise modules. In order to use a particular feature,
-you need to inject its feature module using `Maps.Inject()` method.  Find the modules available in maps and its description as follows.
-
-* Annotations - Inject this provider to use annotations feature.
-* Bubble - Inject this provider to use bubble feature.
-* DataLabel - Inject this provider to use data label feature.
-* Highlight - Inject this provider to use highlight feature.
-* Legend - Inject this provider to use legend feature.
-* Marker - Inject this provider to use marker feature.
-* MapsTooltip - Inject this provider to use tooltip series.
-* NavigationLine - Inject this provider to use navigation lines feature.
-* Selection - Inject this provider to use selection feature.
-* Zoom - Inject this provider to use zooming and panning feature.
-
-In the current application, we are going to modify the above basic maps to visualize 2016 USA president election results.
-
-For this application we are going to use tooltip, data label and legend features of the maps.
-
-Now import the MapsTooltip, DataLabel and Legend modules from maps package and inject it into the Maps component using `Maps.Inject` method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-import { Maps, Legend, DataLabel, MapsTooltip } from '@syncfusion/ej2-maps';
-Maps.Inject(Legend, DataLabel, MapsTooltip);
+map.appendTo('#container');
 
 {% endhighlight %}
 {% endtabs %}
 
-## Render shapes from GeoJSON data
+### Render shapes from GeoJSON data
 
 This section explains how to bind GeoJSON data to the map.
 
@@ -214,7 +216,36 @@ Elements in the maps will get rendered in the layers. So add a layer collection 
           
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs170" %}
 
->Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map-710289613) here.
+## Module Injection
+
+Maps component are segregated into individual feature-wise modules. In order to use a particular feature,
+you need to inject its feature module using `Maps.Inject()` method.  Find the modules available in maps and its description as follows.
+
+* Annotations - Inject this provider to use annotations feature.
+* Bubble - Inject this provider to use bubble feature.
+* DataLabel - Inject this provider to use data label feature.
+* Highlight - Inject this provider to use highlight feature.
+* Legend - Inject this provider to use legend feature.
+* Marker - Inject this provider to use marker feature.
+* MapsTooltip - Inject this provider to use tooltip series.
+* NavigationLine - Inject this provider to use navigation lines feature.
+* Selection - Inject this provider to use selection feature.
+* Zoom - Inject this provider to use zooming and panning feature.
+
+In the current application, we are going to modify the above basic maps to visualize 2016 USA president election results.
+
+For this application we are going to use tooltip, data label and legend features of the maps.
+
+Now import the MapsTooltip, DataLabel and Legend modules from maps package and inject it into the Maps component using `Maps.Inject` method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
+import { Maps, Legend, DataLabel, MapsTooltip } from '@syncfusion/ej2-maps';
+Maps.Inject(Legend, DataLabel, MapsTooltip);
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Bind data source to map
 
