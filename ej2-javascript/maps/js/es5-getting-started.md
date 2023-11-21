@@ -146,7 +146,7 @@ map.appendTo('#element');
 
 **Step 1:** Create a folder `quickstart` for getting started application.
 
-**Step 2:** The Essential JS 2 controls's common script is already hosted in the below CDN link formats.
+**Step 2:** The Essential JS 2 controls's common script is already hosted in the below CDN link format.
 
 **Common Control Script:**
 > Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
