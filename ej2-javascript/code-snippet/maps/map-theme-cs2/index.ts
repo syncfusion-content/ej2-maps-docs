@@ -12,7 +12,7 @@ let map: Maps = new Maps({
     }]
 });
 
-map.appendTo('#element');
+map.appendTo('#container');
 document.getElementById('theme').onchange = () => {
     var value = (<HTMLInputElement>document.getElementById('theme')).value;
     map.theme= <MapsTheme>value;
