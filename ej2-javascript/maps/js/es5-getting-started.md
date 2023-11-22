@@ -98,7 +98,7 @@ The [`Custom Resource Generator (CRG)`](https://crg.syncfusion.com/) is an onlin
 </html>
 ```
 
-**Step 6:** Add the Maps control to the div element with `id` attribute as "**element**" using the below code. The below code can be added as separate script file (index.js) in `~/quickstart/index.js` and refer it in the **script** tag within the **body** tag.
+**Step 6:** Add the Maps control to the div element with **id** attribute as "**element**" using the below code. The below code can be added in a separate script file (index.js) in `~/quickstart/index.js` and refer it in the **script** tag within the **body** tag.
 
 ```
 var map = new ej.maps.Maps({
@@ -146,16 +146,33 @@ map.appendTo('#element');
 
 **Step 1:** Create a folder `quickstart` for getting started application.
 
-**Step 2:** The Essential JS 2 controls's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential JS 2 controls' global scripts are already hosted in the below CDN link formats.
 
-**Syntax:**
-> Dependency Script: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
-> Control Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
-> Dependency Styles: `https://cdn.syncfusion.com/ej2/{DEPENDENCY_PACKAGE_NAME}/styles/material.css`
-> Control Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/material.css`
+**Common Control Script:**
+> Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
 
 **Example:**
-> Script: [`https://cdn.syncfusion.com/ej2/ej2-maps/dist/global/ej2-maps.min.js`](https://cdn.syncfusion.com/ej2/ej2-maps/dist/global/ej2-maps.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
+
+**or**
+
+**Individual Control Scripts:**
+
+**Syntax**
+>`http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+
+**Example:**
+> Maps Script: [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-maps/dist/global/ej2-maps.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-maps/dist/global/ej2-maps.min.js)
+>
+>Dependency Scripts
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js)
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-data/dist/global/ej2-data.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-data/dist/global/ej2-data.min.js)
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js)
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-pdf-export/dist/global/ej2-pdf-export.min.js)
 >
 
 **Step 3:** Create a HTML page **index.html** in the **quickstart** folder and add the following CDN link references.
@@ -167,7 +184,7 @@ map.appendTo('#element');
 
 ```
 
-**Step 4:** Now, add the div element for initiating the `Syncfusion JavaScript (ES5) maps` control in the index.html by using following code.
+**Step 4:** Now, add the div element for initiating the `Syncfusion JavaScript (ES5) Maps` control in the **index.html** by using following code.
 
 ```html
 <!DOCTYPE html>
@@ -214,7 +231,7 @@ map.appendTo('#element');
 </html>
 ```
 
-**Step 6:** Add the data `world_map.js` as a script file within the **head** tag of the HTML code.
+**Step 6:** Add the data **world_map.js** as a script file within the **head** tag of the HTML code.
 
 ```html
 <!DOCTYPE html>
@@ -228,7 +245,7 @@ map.appendTo('#element');
 
 > Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map1557035892) here. These data must be referred as script file in the HTML code.
 
-**Step 7:** Now, run the `index.html` in web browser, it will render the **Syncfusion JavaScript maps** control.
+**Step 7:** Now, run the **index.html** in web browser, it will render the **Syncfusion JavaScript maps** control.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
