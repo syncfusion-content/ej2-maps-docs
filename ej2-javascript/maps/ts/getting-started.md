@@ -114,6 +114,35 @@ map.appendTo('#container');
 {% endhighlight %}
 {% endtabs %}
 
+Add the **world-map** data in the **app.ts** file.
+
+>Note: Refer the data for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map-710289613) here.
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
+import { world_map } from './world-map';
+
+{% endhighlight %}
+{% endtabs %}
+
+Bind the **world-map** data to the `shapeData` property of the layers in the Maps control.
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
+let map: Maps = new Maps({
+    layers: 
+    [{
+        shapeData: world_map
+    }]
+});
+
+map.appendTo('#container');
+
+{% endhighlight %}
+{% endtabs %}
+
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
 {% tabs %}
@@ -130,15 +159,65 @@ The below example shows a basic Maps control.
 {% highlight ts tabtitle="app.ts" %}
 
 import { Maps } from '@syncfusion/ej2-maps';
+import { world_map } from './world_map';
 
-let map: Maps = new Maps();
+let map: Maps = new Maps({
+    layers: 
+    [{
+        shapeData: world_map
+    }]
+});
 
-map.appendTo('#element');
+map.appendTo('#container');
 
 {% endhighlight %}
 {% endtabs %}
 
-As we didn't specify shapeData to the maps, no shape will be rendered and only an empty SVG element is appended to the maps container.
+### Render shapes from GeoJSON data
+
+This section explains how to bind GeoJSON data to the map.
+
+```javascript
+
+let usMap: Object =
+{
+    "type": "FeatureCollection",
+    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+    "features": [
+        { "type": "Feature", "properties": { "iso_3166_2": "MA", "name": "Massachusetts", "admin": "United States of America" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -70.801756294617277, 41.248076234530558 ]] ] ] }
+        }
+    ]
+    //..
+};
+
+```
+
+```javascript
+
+export let world_map: object =
+{
+     "type": "FeatureCollection",
+     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+     "features": [{ "type": "Feature", "properties": { "admin": "Afghanistan", "name": "Afghanistan", "continent": "Asia" }, 
+    //..
+    //..
+    }]
+};
+<!-- markdownlint-disable MD009 -->
+``` 
+
+Elements in the maps will get rendered in the layers. So add a layer collection to the maps by using [`layers`](../api/maps/#layers) property. Now bind the GeoJSON data to the [`shapeData`](../api/maps/layerSettingsModel/#shapedata) property.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/maps/default-map-cs170/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/maps/default-map-cs170/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/code-snippet/maps/default-map-cs170" %}
 
 ## Module Injection
 
@@ -170,51 +249,6 @@ Maps.Inject(Legend, DataLabel, MapsTooltip);
 
 {% endhighlight %}
 {% endtabs %}
-
-## Render shapes from GeoJSON data
-
-This section explains how to bind GeoJSON data to the map.
-
-```javascript
-
-let usMap: Object =
-{
-    "type": "FeatureCollection",
-    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-    "features": [
-        { "type": "Feature", "properties": { "iso_3166_2": "MA", "name": "Massachusetts", "admin": "United States of America" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -70.801756294617277, 41.248076234530558 ]] ] ] }
-        }
-    ]
-    //..
-};
-
-```
-
-```javascript
-
-export let world_map: object =
-{
-     "type": "FeatureCollection",
-     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-     "features": [{ "type": "Feature", "properties": { "admin": "Afghanistan", "name": "Afghanistan", "continent": "Asia" }, ...
-     };
-<!-- markdownlint-disable MD009 -->
-``` 
-
-Elements in the maps will get rendered in the layers. So add a layer collection to the maps by using [`layers`](../api/maps/#layers) property. Now bind the GeoJSON data to the [`shapeData`](../api/maps/layerSettingsModel/#shapedata) property.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/maps/default-map-cs170/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs170/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "page.domainurl/code-snippet/maps/default-map-cs170" %}
-
->Note: Refer the data values for [`world_map`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world_map-710289613) here.
 
 ## Bind data source to map
 
