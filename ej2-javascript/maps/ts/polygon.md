@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Polygon shape in ##Platform_Name## Maps control
 
-The Maps control allows you to add polygon shape to a geometry map or an online map by using the properties in the [polygons](../api/maps/polygonSettingModel/). This section describes how to add polygon shape to the map and customize them.
+The Maps control allows you to add polygon shape to a geometry map or an online map by using the properties in the [polygons](../api/maps/polygonSettingModel/). This section describes how to add polygon shape to the map and customize them. To render Polygon in Maps, **Polygon** module must be injected into the Maps using **Maps.Inject(Polygon)** method.
 
 The polygon shape can be rendered over the map layer by defining the [points](../api/maps/polygonSettingModel/#points) property in the `polygons` of the Maps control. The `points` property uses a collection of latitude and longitude values to define the polygon shape.
 
