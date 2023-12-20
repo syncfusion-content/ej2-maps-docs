@@ -34,6 +34,7 @@ var maps = new ej.maps.Maps({
 });
 maps.appendTo('#element');
 document.getElementById('button').onclick = () => {
+    var mapBoundCoordinates;
     mapBoundCoordinates = maps.getMinMaxLatitudeLongitude();
     const displayDiv = document.getElementById('coordinatesDisplay');
     displayDiv.innerHTML = '';
