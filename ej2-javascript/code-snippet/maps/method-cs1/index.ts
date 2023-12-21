@@ -39,6 +39,19 @@ let maps: Maps = new Maps({
     ]
 });
 maps.appendTo('#element');
+
+function formatKey(key: string): string {
+    if (key === 'minLatitude') {
+        return 'Minimum Latitude';
+    } else if (key === 'maxLatitude') {
+        return 'Maximum Latitude';
+    } else if (key === 'minLongitude') {
+        return 'Minimum Longitude';
+    } else if (key === 'maxLongitude') {
+        return 'Maximum Longitude';
+    }
+}
+
 if (document.getElementById('button') != null) {
     document.getElementById('button').onclick = () => {
         let mapBoundCoordinates: IMinMaxLatitudeLongitude;
@@ -49,7 +62,8 @@ if (document.getElementById('button') != null) {
             for (const key in mapBoundCoordinates) {
                 if (Object.hasOwnProperty.call(mapBoundCoordinates, key)) {
                     const p = document.createElement('p');
-                    p.textContent = `${key}: ${mapBoundCoordinates[key]}`;
+                    const formattedKey = formatKey(key);
+                    p.textContent = `${formattedKey}: ${mapBoundCoordinates[key]}`;
                     displayDiv.appendChild(p);
                 }
             }
@@ -58,6 +72,3 @@ if (document.getElementById('button') != null) {
         }
     };
 }
-
-
-

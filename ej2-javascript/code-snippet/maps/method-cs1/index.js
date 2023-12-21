@@ -33,6 +33,19 @@ var maps = new ej.maps.Maps({
     ]
 });
 maps.appendTo('#element');
+
+function formatKey(key) {
+    if (key === 'minLatitude') {
+        return 'Minimum Latitude';
+    } else if (key === 'maxLatitude') {
+        return 'Maximum Latitude';
+    } else if (key === 'minLongitude') {
+        return 'Minimum Longitude';
+    } else if (key === 'maxLongitude') {
+        return 'Maximum Longitude';
+    }
+}
+
 document.getElementById('button').onclick = () => {
     var mapBoundCoordinates;
     mapBoundCoordinates = maps.getMinMaxLatitudeLongitude();
@@ -42,7 +55,8 @@ document.getElementById('button').onclick = () => {
         for (const key in mapBoundCoordinates) {
             if (Object.hasOwnProperty.call(mapBoundCoordinates, key)) {
                 const p = document.createElement('p');
-                p.textContent = `${key}: ${mapBoundCoordinates[key]}`;
+                const formattedKey = formatKey(key);
+                p.textContent = `${formattedKey}: ${mapBoundCoordinates[key]}`;
                 displayDiv.appendChild(p);
             }
         }

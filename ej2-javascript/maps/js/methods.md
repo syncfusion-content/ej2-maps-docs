@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Methods in ##Platform_Name## Maps control | Syncfusion
-description: Learn here all about Methods in Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Methods in the Syncfusion ##Platform_Name## Maps control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Methods 
+control: Maps 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -17,7 +17,7 @@ This section explains the methods used in the Maps control.
 
 ## getMinMaxLatitudeLongitude
 
-`getMinMaxLatitudeLongitude` method is used to get the minimum and maximum latitude and longitude values of the visible area of the Maps. This method returns `IMinMaxLatitudeLongitude`, which provides the minimum and maximum latitude and longitude coordinates of the Maps.
+The `getMinMaxLatitudeLongitude` method returns the minimum and maximum latitude and longitude values of the Maps visible area. This method returns a `IMinMaxLatitudeLongitude` object that contains the Maps minimum and maximum latitude and longitude coordinates.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
