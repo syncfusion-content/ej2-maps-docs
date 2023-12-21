@@ -49,7 +49,14 @@ var map = new ej.maps.Maps({
                     }
                 ],
                 highlightSettings: {
-                    enable: true
+                    enable: true,
+                    fill: 'blue',
+                    opacity: 0.7,
+                    border: {
+                        color: 'green',
+                        width: 2,
+                        opacity: 0.7
+                    }
                 },
                 selectionSettings: {
                     enable: true,

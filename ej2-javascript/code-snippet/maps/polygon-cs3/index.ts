@@ -65,7 +65,14 @@ let map: Maps = new Maps({
                     }
                 },
                 selectionSettings: {
-                    enable: true
+                    enable: true,
+                    fill: 'red',
+                    opacity: 0.7,
+                    border: {
+                        color: 'green',
+                        width: 2,
+                        opacity: 0.7
+                    }
                 }
             }
         }
