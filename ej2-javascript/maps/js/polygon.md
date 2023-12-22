@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Polygon shape in ##Platform_Name## Maps control
 
-The Maps control allows you to add polygon shape to a geometry map or an online map by using the properties in the [polygons](../api/maps/polygonSettingModel/). This section describes how to add polygon shape to the map and customize them.
+The Maps control allows you to add polygon shape to a geometry map or an online map by using the properties in the [polygons](../api/maps/polygonSettingsModel/#polygons). This section describes how to add polygon shape to the map and customize them.
 
 The polygon shape can be rendered over the map layer by defining the [points](../api/maps/polygonSettingModel/#points) property in the `polygons` of the Maps control. The `points` property uses a collection of latitude and longitude values to define the polygon shape.
 
-The `polygons` provides the following properties for customizing the polygon shape of the Maps component.
+The `polygons` provides the following properties for customizing the polygon shape of the Maps control.
 
 * [fill](../api/maps/polygonSettingModel/#fill) - It is used to change the color of the polygon shape.
 * [opacity](../api/maps/polygonSettingModel/#opacity) - It is used to change the opacity of the polygon shape.
@@ -23,7 +23,7 @@ The `polygons` provides the following properties for customizing the polygon sha
 * [borderWidth](../api/maps/polygonSettingModel/#borderwidth) - It is used to change the width of the border in the polygon shape.
 * [borderOpacity](../api/maps/polygonSettingModel/#borderopacity) - It is used to change the opacity of the border in the polygon shape.
 
-You can also include “n” polygon shapes inside the [polygonSettings](../api/maps/polygonSettingsModel/) property.
+> You can also include “n” polygon shapes using the [polygons](../api/maps/polygonSettingsModel/#polygons) property.
 
 The following example shows how to customize the polygon shape over the geometry map.
 
