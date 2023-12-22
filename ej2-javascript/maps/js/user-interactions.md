@@ -312,7 +312,7 @@ To enable the selection for markers in Maps, set the [`selectionSettings`](../ap
 
 ### Enable selection for polygons
 
-When the [enable](../api/maps/selectionSettingsModel/#enable) property of [selectionSettings](../api/maps/selectionSettingsModel/) is set to **true**, the polygon shapes can be selected via user interaction. The following properties are available in `selectionSettings` to customize the polygon shape when it is selected.
+When the [enable](../api/maps/selectionSettingsModel/#enable) property of [selectionSettings](../api/maps/polygonSettingsModel/#selectionsettings) is set to **true**, the polygon shapes can be selected via user interaction. The following properties are available in `selectionSettings` to customize the polygon shape when it is selected.
 
 * [enableMultiSelect](../api/maps/selectionSettingsModel/#enablemultiselect) - It is used to enable multiple selection of polygon shapes.
 * [fill](../api/maps/selectionSettingsModel/#fill) - It is used to change the color of the selected polygon shape.
@@ -435,7 +435,7 @@ To enable the highlight for markers in Maps, set the [`highlightSettings`](../ap
 
 ### Enable highlight for polygons
 
-The polygon shapes can be highlighted via user interaction if the [enable](../api/maps/highlightSettingsModel/#enable) property of [highlightSettings](../api/maps/highlightSettingsModel/) is set to **true**. The following properties are available in `highlightSettings` to customize the polygon shape when it is highlighted.
+The polygon shapes can be highlighted via user interaction if the [enable](../api/maps/highlightSettingsModel/#enable) property of [highlightSettings](../api/maps/polygonSettingsModel/#highlightsettings) is set to **true**. The following properties are available in `highlightSettings` to customize the polygon shape when it is highlighted.
 
 * [fill](../api/maps/highlightSettingsModel/#fill) - It is used to change the color of the highlighted polygon shape.
 * [opacity](../api/maps/highlightSettingsModel/#opacity) - It is used to change the opacity of the highlighted polygon shape.
