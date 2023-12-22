@@ -310,6 +310,28 @@ To enable the selection for markers in Maps, set the [`selectionSettings`](../ap
         
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs101" %}
 
+### Enable selection for polygons
+
+When the [enable](../api/maps/selectionSettingsModel/#enable) property of [selectionSettings](../api/maps/polygonSettingsModel/#selectionsettings) is set to **true**, the polygon shapes can be selected via user interaction. The following properties are available in `selectionSettings` to customize the polygon shape when it is selected.
+
+* [enableMultiSelect](../api/maps/selectionSettingsModel/#enablemultiselect) - It is used to enable multiple selection of polygon shapes.
+* [fill](../api/maps/selectionSettingsModel/#fill) - It is used to change the color of the selected polygon shape.
+* [opacity](../api/maps/selectionSettingsModel/#opacity) - It is used to change the opacity of the selected polygon shape.
+* [border](../api/maps/selectionSettingsModel/#border) - This property is used to change the color, width, and opacity of the border of the selected polygon shape.
+
+The following example shows how to select the polygon shape in the geometry map.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/maps/polygon-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/maps/polygon-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/maps/polygon-cs2" %}
+
 ### Public method for the shape selection
 
 The [`shapeSelection`](../api/maps/#shapeselection) method can be used to select each shape in the Maps.
@@ -410,6 +432,27 @@ To enable the highlight for markers in Maps, set the [`highlightSettings`](../ap
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maps/default-map-cs106" %}
+
+### Enable highlight for polygons
+
+The polygon shapes can be highlighted via user interaction if the [enable](../api/maps/highlightSettingsModel/#enable) property of [highlightSettings](../api/maps/polygonSettingsModel/#highlightsettings) is set to **true**. The following properties are available in `highlightSettings` to customize the polygon shape when it is highlighted.
+
+* [fill](../api/maps/highlightSettingsModel/#fill) - It is used to change the color of the highlighted polygon shape.
+* [opacity](../api/maps/highlightSettingsModel/#opacity) - It is used to change the opacity of the highlighted polygon shape.
+* [border](../api/maps/highlightSettingsModel/#border) - This property is used to change the color, width, and opacity of the border of the highlighted polygon shape.
+
+The following example shows how to highlight a polygon shape on a geometry map.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/maps/polygon-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/maps/polygon-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/maps/polygon-cs3" %}
 
 ## Tooltip
 
