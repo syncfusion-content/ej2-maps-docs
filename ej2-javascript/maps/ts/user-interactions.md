@@ -376,7 +376,7 @@ When the [enable](../api/maps/selectionSettingsModel/#enable) property of [selec
 * [opacity](../api/maps/selectionSettingsModel/#opacity) - It is used to change the opacity of the selected polygon shape.
 * [border](../api/maps/selectionSettingsModel/#border) - This property is used to change the color, width, and opacity of the border of the selected polygon shape.
 
->To use the polygon feature, the Polygon module must be injected.
+>To use the polygon feature, the **Polygon** module must be injected, as described in [this link](polygon).
 
 The following example shows how to select the polygon shape in the geometry map.
 
@@ -511,7 +511,7 @@ The polygon shapes can be highlighted via user interaction if the [enable](../ap
 * [opacity](../api/maps/highlightSettingsModel/#opacity) - It is used to change the opacity of the highlighted polygon shape.
 * [border](../api/maps/highlightSettingsModel/#border) - This property is used to change the color, width, and opacity of the border of the highlighted polygon shape.
 
->To use the polygon feature, the Polygon module must be injected.
+>To use the polygon feature, the **Polygon** module must be injected, as described in [this link](polygon).
 
 The following example shows how to highlight a polygon shape on a geometry map.
 
