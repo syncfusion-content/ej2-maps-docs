@@ -17,9 +17,9 @@ This section explains the methods used in the Maps control.
 
 ## getMinMaxLatitudeLongitude
 
-The `getMinMaxLatitudeLongitude` method returns the minimum and maximum latitude and longitude values of the Maps visible area. This method returns a `IMinMaxLatitudeLongitude` object that contains the Maps minimum and maximum latitude and longitude coordinates.
+The `getMinMaxLatitudeLongitude` method returns the minimum and maximum latitude and longitude values of the Maps visible area. This method returns a [IMinMaxLatitudeLongitude](https://ej2.syncfusion.com/documentation/api/maps/iMinMaxLatitudeLongitude/) object that contains the Maps minimum and maximum latitude and longitude coordinates.
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/maps/method-cs1/index.ts %}
 {% endhighlight %}
@@ -29,4 +29,3 @@ The `getMinMaxLatitudeLongitude` method returns the minimum and maximum latitude
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maps/method-cs1" %}
-
