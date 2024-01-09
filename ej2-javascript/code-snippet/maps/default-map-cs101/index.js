@@ -21,4 +21,3 @@ var map = new ej.maps.Maps({
     }]
 });
 map.appendTo('#element');
-
