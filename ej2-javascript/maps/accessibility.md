@@ -15,7 +15,7 @@ Maps has built-in accessibility features like screen reading, keyboard navigatio
 
 ## WAI-ARIA attributes
 
-To meet accessibility standards, the Maps control follows to the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns. In the Maps component, the following ARIA attributes are used:
+To meet accessibility standards, the Maps control follows to the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns. In the Maps control, the following ARIA attributes are used:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -25,7 +25,7 @@ To meet accessibility standards, the Maps control follows to the [WAI-ARIA](http
 
 ## Screen reading in Maps
 
-Accessibility in the Maps component ensures that all users, regardless of ability or disability, can use screen reading. The following Map elements will be read aloud using screen reading software, such as Narrator for Windows.
+Accessibility in the Maps control ensures that all users, regardless of ability or disability, can use screen reading. The following Map elements will be read aloud using screen reading software, such as Narrator for Windows.
 
 | Elements | Description |
 | --- | --- |
@@ -40,7 +40,7 @@ Accessibility in the Maps component ensures that all users, regardless of abilit
 
 ## Keyboard Navigation
 
-All the Maps actions can be controlled via keyboard keys. The applicable key combinations and their relative functionalities are listed below for the appropriate UI features available in the component.
+All the Maps actions can be controlled via keyboard keys. The applicable key combinations and their relative functionalities are listed below for the appropriate UI features available in the control.
 
 Interaction Keys |Description
 -----|-----
@@ -57,9 +57,9 @@ Interaction Keys |Description
 
 ## Ensuring accessibility
 
-The Maps component's accessibility levels are ensured using an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Maps control's accessibility levels are ensured using an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Maps component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/maps.html) in a new window to evaluate the accessibility of the Maps component with accessibility tools.
+The accessibility compliance of the Maps control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/maps.html) in a new window to evaluate the accessibility of the Maps control with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/maps.html" %}
 
