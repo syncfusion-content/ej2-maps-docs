@@ -15,7 +15,7 @@ Maps has built-in accessibility features like screen reading, keyboard navigatio
 
 ## WAI-ARIA attributes
 
-To meet accessibility standards, the Maps component follows to the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns. In the Maps component, the following ARIA attributes are used:
+To meet accessibility standards, the Maps control follows to the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns. In the Maps component, the following ARIA attributes are used:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -65,4 +65,4 @@ The accessibility compliance of the Maps component is shown in the following sam
 
 ## See also
 
-* [Accessibility in Syncfusion ##Platform_Name## components](../common/accessibility)
+* [Accessibility in Syncfusion ##Platform_Name## controls](../common/accessibility)
