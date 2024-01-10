@@ -21,7 +21,7 @@ To meet accessibility standards, the Maps component follows to the [WAI-ARIA](ht
 | --- | --- |
 | `role=region` | It specifies the Maps areas that do not support interactive functions like selection and highlight. |
 | `role=button` | It specifies the Maps areas where interactive functions such as selection and highlight are available. |
-| `aria-label` | Provides an accessible name for the Maps container, title, subtitle and legend title. |
+| `aria-label` | Provides an accessible name for the Maps title, shapes, legend title, legend item label, data label, annotation, marker template and tooltip template. |
 
 ## Screen reading in Maps
 
@@ -61,6 +61,7 @@ The Maps component's accessibility levels are ensured using an [accessibility-ch
 
 The accessibility compliance of the Maps component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/maps.html) in a new window to evaluate the accessibility of the Maps component with accessibility tools.
 
+{% previewsample "https://ej2.syncfusion.com/accessibility/maps.html" %}
 
 ## See also
 
