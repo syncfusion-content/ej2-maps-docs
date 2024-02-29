@@ -65,8 +65,10 @@ Refer the [`API`](../api/maps/zoomSettingsModel) links for Zooming.
 var map = new ej.maps.Maps({
     zoomSettings: {
         enable: true,
-        buttonSettings: {
-            toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
+        toolbarSettings: {
+           buttonSettings: {
+              toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset'],
+           }
         }
     },
     layers: [{
