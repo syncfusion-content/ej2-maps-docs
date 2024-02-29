@@ -65,8 +65,10 @@ Refer the [`API`](../api/maps/zoomSettingsModel) links for Zooming.
 var map = new ej.maps.Maps({
     zoomSettings: {
         enable: true,
-        buttonSettings: {
-            toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
+        toolbarSettings: {
+           buttonSettings: {
+              toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset'],
+           }
         }
     },
     layers: [{
@@ -196,7 +198,7 @@ The zoom toolbar can be customized by using the [toolbarSettings](../api/maps/zo
 {% include code-snippet/maps/default-map-cs96/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs96/index.html %}
+{% include code-snippet/maps/default-map-cs96/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -224,7 +226,7 @@ The appearance of the buttons in the zoom toolbar can be customized by using the
 {% include code-snippet/maps/default-map-cs97/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs97/index.html %}
+{% include code-snippet/maps/default-map-cs97/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -252,7 +254,7 @@ The appearance of the tooltip of the zoom toolbar can be customized by using the
 {% include code-snippet/maps/default-map-cs98/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs98/index.html %}
+{% include code-snippet/maps/default-map-cs98/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -274,7 +276,7 @@ The following properties are available to customize the selection of Maps elemen
 {% include code-snippet/maps/default-map-cs99/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs99/index.html %}
+{% include code-snippet/maps/default-map-cs99/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -289,7 +291,7 @@ To enable the selection for bubbles in Maps, set the [`selectionSettings`](../ap
 {% include code-snippet/maps/default-map-cs100/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs100/index.html %}
+{% include code-snippet/maps/default-map-cs100/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -304,7 +306,7 @@ To enable the selection for markers in Maps, set the [`selectionSettings`](../ap
 {% include code-snippet/maps/default-map-cs101/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs101/index.html %}
+{% include code-snippet/maps/default-map-cs101/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -326,7 +328,7 @@ The following example shows how to select the polygon shape in the geometry map.
 {% include code-snippet/maps/polygon-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/polygon-cs2/index.html %}
+{% include code-snippet/maps/polygon-cs2/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -342,7 +344,7 @@ LayerIndex, propertyName, country name, and selected value as a boolean state(tr
 {% include code-snippet/maps/selection-method-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/selection-method-cs1/index.html %}
+{% include code-snippet/maps/selection-method-cs1/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -359,7 +361,7 @@ The shape is initially selected using the [`initialShapeSelection`](../api/maps/
 {% include code-snippet/maps/default-map-cs102/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs102/index.html %}
+{% include code-snippet/maps/default-map-cs102/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -374,7 +376,7 @@ Using the [`initialMarkerSelection`](../api/maps/initialMarkerSelectionSettingsM
 {% include code-snippet/maps/default-map-cs103/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs103/index.html %}
+{% include code-snippet/maps/default-map-cs103/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -397,7 +399,7 @@ Hovering on the specific legend, the shapes which are bounded to the selected le
 {% include code-snippet/maps/default-map-cs104/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs104/index.html %}
+{% include code-snippet/maps/default-map-cs104/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -412,7 +414,7 @@ To enable the highlight for bubbles in Maps, set the [`highlightSettings`](../ap
 {% include code-snippet/maps/default-map-cs105/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs105/index.html %}
+{% include code-snippet/maps/default-map-cs105/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -427,7 +429,7 @@ To enable the highlight for markers in Maps, set the [`highlightSettings`](../ap
 {% include code-snippet/maps/default-map-cs106/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs106/index.html %}
+{% include code-snippet/maps/default-map-cs106/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -448,7 +450,7 @@ The following example shows how to highlight a polygon shape on a geometry map.
 {% include code-snippet/maps/polygon-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/polygon-cs3/index.html %}
+{% include code-snippet/maps/polygon-cs3/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -463,7 +465,7 @@ On mouse over or touch end event, the tooltip is used to get more information ab
 {% include code-snippet/maps/default-map-cs107/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs107/index.html %}
+{% include code-snippet/maps/default-map-cs107/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -483,7 +485,7 @@ The following properties are available in the [`tooltipSettings`](../api/maps/to
 {% include code-snippet/maps/default-map-cs108/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/default-map-cs108/index.html %}
+{% include code-snippet/maps/default-map-cs108/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -498,7 +500,7 @@ The HTML element can be rendered in the tooltip of the Maps using the [`template
 {% include code-snippet/maps/tooltip-template-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/maps/tooltip-template-cs1/index.html %}
+{% include code-snippet/maps/tooltip-template-cs1/js/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
