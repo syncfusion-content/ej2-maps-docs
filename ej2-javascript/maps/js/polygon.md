@@ -40,15 +40,15 @@ The following example shows how to customize the polygon shape over the geometry
 
 ## Tooltip for polygon
 
-Tooltip is used to display more information about a polygon shape on mouse over or touch end event. This can be enabled by setting the [`visible`](../api/maps/tooltipSettingsModel/#visible) property to **true** in the  [`tooltipSettings`](../api/maps/tooltipSettingsModel). Additonally, you need to set the [`tooltipText`](../api/maps/polygonSettingsModel/#tooltiptext) property in the [`polygonSettings`](../api/maps/polygonSettingsModel) to show the tooltip text separately for each polygon shape, if you add 'n' numbers of polygon shapes.
+Tooltip is used to display more information about a polygon shape on mouse over or touch end event. This can be enabled by setting the [`visible`]() property to **true** in the  [`tooltipSettings`](). Additonally, you need to set the [`tooltipText`]() property in the [`polygonSettings`](../api/maps/polygonSettingsModel) to show the tooltip text separately for each polygon shape, if you add 'n' numbers of polygon shapes.
 
 ### Tooltip customization
 
-The following properties are available in the [`tooltipSettings`](../api/maps/tooltipSettingsModel/) to customize the tooltip of the Maps component.
+The following properties are available in the [`tooltipSettings`]() to customize the tooltip of the Maps component.
 
-* [`border`](../api/maps/tooltipSettingsModel/#border) - To customize the color, width and opacity of the border of the tooltip in the polygon shape.
-* [`fill`](../api/maps/tooltipSettingsModel/#fill) - Applies the color of the tooltip in the polygon shape.
-* [`textStyle`](../api/maps/tooltipSettingsModel/#textstyle) - To customize the style of the text in the tooltip for the polygon shape.
+* [`border`]() - To customize the color, width and opacity of the border of the tooltip in the polygon shape.
+* [`fill`]() - Applies the color of the tooltip in the polygon shape.
+* [`textStyle`]() - To customize the style of the text in the tooltip for the polygon shape.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -63,7 +63,7 @@ The following properties are available in the [`tooltipSettings`](../api/maps/to
 
 ### Tooltip template
 
-The HTML element can be rendered in the tooltip of the Maps using the [`tooltipTemplate`](../api/maps/tooltipSettingsModel/#template) property of the [`polygonSettings`](../api/maps/tooltipSettingsModel/).  If you add 'n' numbers of polygon shapes, you may add the `tooltipTemplate` property to each polygon group, which will display the tooltip data for the associated polygon shape.
+The HTML element can be rendered in the tooltip of the Maps using the [`tooltipTemplate`]() property of the [`polygonSettings`](../api/maps/polygonSettingsModel).  If you add 'n' numbers of polygon shapes, you may add the `tooltipTemplate` property to each polygon group, which will display the tooltip data for the associated polygon shape.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
