@@ -9,10 +9,10 @@ let map: Maps = new Maps({
         {
             shapeData: world_map,
             polygonSettings: {
-                tooltipSettings: { visible: true, border: { width: 2, color: 'red' } },
+                tooltipSettings: { visible: true },
                 polygons: [
                     {
-                        tooltipText:'Saudi Arabia',
+                        tooltipTemplate:'<div style="width:240px;border: 2px solid #000;padding: 10px;fill:white;font-weight:bold;font-size:15px;"> Country Name : Saudi Arabia</div>',
                         points: [
                             { longitude: -1.8920678947185365, latitude: 35.06195799239681 },
                             { longitude: -1.6479633699113947, latitude: 33.58989612266137 },
