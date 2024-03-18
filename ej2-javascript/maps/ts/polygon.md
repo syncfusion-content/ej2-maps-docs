@@ -46,7 +46,7 @@ Tooltip is used to display more information about a polygon shape during a mouse
 
 The following properties are available in the [tooltipSettings](../api/maps/polygonTooltipSettingsModel/) to customize the appearance of the tooltip.
 
-* [border](../api/maps/polygonTooltipSettingsModel/#border) - To change the color, width and opacity of the border of the tooltip in the polygon shape.
+* [border](../api/maps/polygonTooltipSettingsModel/#border) - To change the color, width, and opacity of the border of the tooltip in the polygon shape.
 * [fill](../api/maps/polygonTooltipSettingsModel/#fill) - Applies the color of the tooltip in the polygon shape.
 * [textStyle](../api/maps/polygonTooltipSettingsModel/#textstyle) - To change the style of the text in the tooltip of the polygon shape.
 
