@@ -37,3 +37,43 @@ The following example shows how to customize the polygon shape over the geometry
 {% endtabs %}
         
 {% previewsample "page.domainurl/code-snippet/maps/polygon-cs1" %}
+
+## Tooltip for polygon shape
+
+A tooltip is used to display more information about a polygon shape during a mouse or touch interaction. Tooltips and tooltip templates can be enabled by setting the [visible]() property to **true** in the [tooltipSettings](). Additionally, you need to set the desired content as a value to the [tooltipText]() property in the [polygonSettings](../api/maps/polygonSettingsModel) tag to show the tooltip. If you add 'n' numbers of polygon shapes, you can add the `tooltipText` property to each polygon, which will display the tooltip for the associated polygon shape.
+
+### Tooltip customization
+
+The following properties are available in the [tooltipSettings]() to customize the tooltip of the Maps control.
+
+* [border]() - To change the color, width and opacity of the border of the tooltip in the polygon shape.
+* [fill]() - Applies the color of the tooltip in the polygon shape.
+* [textStyle]() - To change the style of the text in the tooltip of the polygon shape.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/maps/polygon-cs4/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/maps/polygon-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/maps/polygon-cs4" %}
+
+### Tooltip template
+
+Any HTML element can be rendered in the tooltip of the polygon shapes using the [tooltipTemplate]()property of the [polygonSettings](../api/maps/polygonSettingsModel). If you add 'n' numbers of polygon shapes, you can add the `tooltipTemplate` property to each polygon, which will display the tooltip for the associated polygon shape.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/maps/polygon-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/maps/polygon-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/maps/polygon-cs5" %}
+
+
