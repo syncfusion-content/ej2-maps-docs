@@ -40,7 +40,7 @@ The following example shows how to customize the polygon shape over the geometry
 
 ## Tooltip
 
-Tooltip is used to display more information about a polygon shape during a mouse or touch interaction. Tooltip and tooltip template can be enabled by setting the [visible](../api/maps/polygonTooltipSettingsModel/#visible) property to **true** in the [tooltipSettings](../api/maps/polygonTooltipSettingsModel/). Additionally, you need to set the desired content as a value to the [tooltipText](../api/maps/polygonSettingModel/#tooltiptext) property in the [polygons](../api/maps/polygonSettingModel) property to show the tooltip. If you add 'n' numbers of polygon shapes, you can add the `tooltipText` property to each polygon, which will display the tooltip for the associated polygon shape.
+Tooltip is used to display more information about a polygon shape during a mouse or touch interaction. Tooltip and tooltip template can be enabled by setting the [visible](../api/maps/polygonTooltipSettingsModel/#visible) property to **true** in the [tooltipSettings](../api/maps/polygonTooltipSettingsModel/). Additionally, you need to set the desired content as a value to the [tooltipText](../api/maps/polygonSettingModel/#tooltiptext) property in the `polygons` property to show the tooltip. If you add 'n' numbers of polygon shapes, you can add the `tooltipText` property to each polygon, which will display the tooltip for the associated polygon shape.
 
 ### Tooltip customization
 
@@ -63,7 +63,7 @@ The following properties are available in the [tooltipSettings](../api/maps/poly
 
 ### Tooltip template
 
-Any HTML element can be rendered in the tooltip of the polygon shapes using the [tooltipTemplate](../api/maps/polygonSettingModel/#tooltiptemplate) property of the [polygonSettings](../api/maps/polygonSettingModel/). If you add 'n' numbers of polygon shapes, you can add the `tooltipTemplate` property to each polygon, which will display the tooltip for the associated polygon shape.
+Any HTML element can be rendered in the tooltip of the polygon shapes using the [tooltipTemplate](../api/maps/polygonSettingModel/#tooltiptemplate) property of the `polygons`. If you add 'n' numbers of polygon shapes, you can add the `tooltipTemplate` property to each polygon, which will display the tooltip for the associated polygon shape.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
